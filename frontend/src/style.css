@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ece5dd;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.App {
+    max-height: 100%;
+    padding: 20px;
+}
+
+.login_container {
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 40px 30px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 300px;
+}
+
+.login_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #075e54;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.login_icon {
+    margin-right: 15px;
+    font-size: 50px;
+    color: #00bfa5;
+    background-color: #ffffff;
+}
+
+.login_heading {
+    background-color: #ffffff;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.login_form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 3px solid #00bfa5;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.login_form input:focus {
+    outline: none;
+    border-color: #075e54;
+    box-shadow: 0 0 8px rgba(7, 94, 84, 0.5);
+}
+
+.login_form button {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px 0;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #075e54;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login_form button:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+.chats_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.user {
+    color: rgb(4, 170, 170);
+}
+
+.chats_icon {
+    color: #00bfa5;
+    font-size: 30px;
+}
+
+.chats_logout {
+    color: rgb(6, 152, 152);
+    font-size: 30px;
+    border: 2px solid rgb(4, 170, 170);
+    background-color: rgb(4, 170, 170);
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+
+.chats_logout:hover {
+    cursor: pointer;
+}
+
+.chats_text {
+    background-color: rgb(4, 170, 170);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+
+.chats_list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.chat_sender {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 350px;
+    margin-bottom: 10px;
+}
+
+.sender_name {
+    background-color: #ffffff;
+
+}
+
+.receiver_name {
+    background-color: #aff6be;
+}
+
+.chat_sender img,
+.chat_receiver img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.chat_sender p {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.chat_receiver {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+
+.chat_receiver p {
+    padding: 10px;
+    background-color: #aff6be;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.inputtext_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.inputtext_container button {
+    width: 10%;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(4, 170, 170);
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.inputtext_container textarea {
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        position: relative;
+    }
+
+    .login_container {
+        width: 90%;
+        margin: 10% auto;
+        padding: 20px;
+        margin-top: 50%;
+        position: absolute;
+    }
+
+    .login_title {
+        padding-top: 20px;
+    }
+
+    .login_heading {
+        font-size: 50px;
+    }
+
+    .login_form input {
+        width: 80%;
+    }
+
+    .chats_header {
+        font-size: 18px;
+    }
+
+    .chats_logout {
+        font-size: 20px;
+    }
+
+    .chat_sender{
+        margin: 10px auto;
+    }
+
+    .chat_receiver {
+        margin: 10px;
+    }
+
+    .inputtext_container textarea {
+        width: 65%;
+        height: 40px;
+        overflow-y: hidden;
+    }
+
+    .inputtext_container button {
+        width: 30%;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .chat_sender p,
+    .chat_receiver p {
+        max-width: 85%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body{
+        position: relative;
+    }
+
+    .login_container {
+        width: 90%;
+        margin: 10% auto;
+        padding: 20px;
+        margin-top: 50%;
+        position: absolute;
+    }
+
+    .login_title {
+        padding-top: 20px;
+    }
+
+    .login_heading {
+        font-size: 50px;
+    }
+
+    .login_form input {
+        width: 80%;
+    }
+
+    .chats_logout {
+        font-size: 20px;
+    }
+
+    .chats_header {
+        font-size: 18px;
+    }
+
+    .inputtext_container textarea {
+        width: 70%;
+        height: 35px;
+        overflow-y: hidden;
+    }
+
+    .inputtext_container button {
+        width: 25%;
+        height: 35px;
+    }
+
+    .chat_sender p,
+    .chat_receiver p {
+        max-width: 85%;
+        font-size: 14px;
+    }
+}
